@@ -19,7 +19,22 @@
 	}
 
 	&__nav{
-		transform: translate(330px,50px);
+		transform: translate(100px,50px);
+
+		@mixin atMedium{
+			transform: translate(200px,50px);
+		}
+		@mixin atLarge{
+			transform: translate(330px,50px);
+		}
+	}
+
+	&__nav{
+		display: none;
+
+		@mixin atMedium{
+			display: block;
+		}
 	}
 
 	&__nav ul{
