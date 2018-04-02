@@ -1,51 +1,71 @@
- .hero-img{
+/*Start of HERO__Image
+=========================================================*/
+.hero-img{
+	display:block;;
+	max-width:100%;
+	height: 500px;
+	background-image: url('/assets/hero-img.png');
+	background-position: ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
 	position: relative;
 
-	&__main{
-		display: block;
-		max-width: 100%;
-		height: 915px;
+	@mixin atMedium{
+		height: 700px;
 	}
+
+	@mixin atLarge{
+		height: 920px;
+	}
+
 
 	&__text{
 		position: absolute;
-		top: 180px;
-		left: auto;
-		padding: 25px;
-		font-family: 'Lato',sans-serif;
+		max-width: 390px;
+		transform: translate(20px,100px);
+		font-family: 'Lato', sans-serif;
 		color: #FFF;
+		padding-right: 20px;
+
 
 		@mixin atMedium{
-			padding: 0;
-			top: 230px;
-			left:200px;
+			transform: translate(20px,180px);
 		}
 
 		@mixin atLarge{
-			padding: 0;
-			top: 230px;
-			left:330px;
+			transform: translate(330px,230px);
 		}
 	}
 
 	&__heading{
-		max-width: 340px;
-		font-size: 40px;
-		line-height: 30px;
+		max-width: 360px;
+		font-size: 2.5rem;
 		font-weight: 300;
-		text-shadow: 1px 1px rgba(0,0,0,0.2);
+		line-height: 29px;
+		text-shadow:0 1px rgba(0,0,0,0.5);
+
+		@mixin atMedium{
+			font-size: 3rem;
+		}
 	}
 
-/* 	&__text h1 strong{
-	font-weight: thin;
-}
- */
+	&__heading-fix{
+		font-size: 2rem;
+		@media (min-width: 334px){
+			font-size: 2.5rem;
+		}
+		@mixin atMedium{
+			font-size: 3rem;
+		}
+	}
+
 	&__description{
-		max-width: 350px;
-		font-size: 16px;
-		word-spacing: 1.2px;
-		line-height: 25px;
-		font-weight: 100;
-		text-shadow: 1px 1px rgba(0,0,0,0.2);
+		font-size: 0.875rem;
+		font-weight: normal;
+		line-height: 20px;
+		text-shadow:0 1px rgba(0,0,0,0.2);
 	}
 }
+/*End of HERO__Image 
+=========================================================*/
