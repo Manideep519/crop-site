@@ -10,6 +10,8 @@
 	background-repeat: no-repeat;
 	overflow: hidden;
 	position: relative;
+	margin: 0;
+	padding: 0;
 
 	@mixin atMedium{
 		height: 700px;
@@ -23,18 +25,17 @@
 	&__text{
 		position: absolute;
 		max-width: 390px;
-		transform: translate(20px,100px);
+		transform: translateY(100px);
 		font-family: 'Lato', sans-serif;
 		color: #FFF;
-		padding-right: 20px;
 
 
 		@mixin atMedium{
-			transform: translate(20px,180px);
+			transform: translateY(180px);
 		}
 
 		@mixin atLarge{
-			transform: translate(330px,230px);
+			transform: translateY(230px)
 		}
 	}
 
