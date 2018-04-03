@@ -1,0 +1,37 @@
+.footer{
+	font-family: 'Lato',sans-serif;
+	background-color: #e56c69;
+	color: #FFF;
+	height: 475px;
+	padding-top: 45px;
+	@mixin clearfix;
+
+
+	ul{
+		padding: 0 20px;
+		margin: 0;
+		float: left;
+	}
+
+	ul li{
+		list-style-type: none;
+		font-weight: 300;
+		padding-bottom: 15px;
+		font-size: 14px;
+	}
+
+/*	ul li:first-child{
+		font-weight: bold;
+	}*/
+
+/*	ul:not(:first-child):(first-child){
+		color: blue;
+	}*/
+
+
+	ul li:first-child{
+		font-weight: bold;
+	}
+
+
+}

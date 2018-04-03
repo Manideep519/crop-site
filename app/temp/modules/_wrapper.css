@@ -5,5 +5,12 @@
 	box-sizing: border-box;
 	padding-left: 20px;
 	padding-right: 20px;
+	@mixin clearfix;
 
+
+
+	&__nav-fix{
+		max-width: 800px;
+		float: right;
+	}
 }

@@ -60,12 +60,12 @@
 			font-size: 3rem;
 		}
 	}
-
 	&__description{
 		font-size: 0.875rem;
 		font-weight: normal;
 		line-height: 20px;
 		text-shadow:0 1px rgba(0,0,0,0.2);
+
 	}
 }
 /*End of HERO__Image 
