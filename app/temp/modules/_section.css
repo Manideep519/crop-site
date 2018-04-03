@@ -3,19 +3,27 @@
 	height: 525px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	
-
 	@mixin clearfix;
+
+
+
+	&__text-1{
+		font-size: 20px;
+		max-width: 270px;
+		color: lightorange;
+	}
 
 }
 
 
 .section-1{
-	float: left;
 	max-width: 33.333%;
+	float: left;
+	background-color: rgba(0,0,0,0.3);
 }
 
 .section-2{
-	float: right;
 	max-width: 66.666%;
+	float: left;
+	background-color: rgba(0,0,0,0.3);
 }

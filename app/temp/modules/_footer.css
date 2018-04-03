@@ -6,32 +6,48 @@
 	padding-top: 45px;
 	@mixin clearfix;
 
-
 	ul{
-		padding: 0 20px;
+		padding: 0;
 		margin: 0;
+		font-size: 12px;
+	}
+
+
+	&__address{
+		max-width:33.33%;
+		float: left;
+		/*background-color: rgba(0,0,0,0.3);*/
+	}
+
+	&__links{
+		max-width: 66.66%;
+		float: left;
+		/*background-color: rgba(0,0,0,0.3);*/
+	}
+
+	&__address ul{
+		list-style-type: none;
+	}
+
+	&__links ul{
+		list-style-type: none;
 		float: left;
 	}
 
+	&__links ul:not(:first-child){
+		padding-left: 80px;
+	}
+
+
+	&__links ul li:first-child{
+		font-weight: bold;
+		font-size: 13px;
+	}
+
 	ul li{
-		list-style-type: none;
-		font-weight: 300;
-		padding-bottom: 15px;
-		font-size: 14px;
+		padding-bottom: 16px;
 	}
-
-/*	ul li:first-child{
-		font-weight: bold;
-	}*/
-
-/*	ul:not(:first-child):(first-child){
-		color: blue;
-	}*/
-
-
-	ul li:first-child{
-		font-weight: bold;
-	}
-
 
 }
+
+

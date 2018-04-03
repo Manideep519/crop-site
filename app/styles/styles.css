@@ -356,7 +356,7 @@ img{
 }
 
 /*Start of HERO__Image
-=========================================================*/
+==========================================================================*/
 
 .hero-img{
 	display:block;;
@@ -393,6 +393,7 @@ img{
 		        transform: translateY(100px);
 		font-family: 'Lato', sans-serif;
 		color: #FFF;
+		background-color: rgba(0,0,0,0.3);
 	}
 
 @media (min-width: 800px){
@@ -453,10 +454,10 @@ img{
 	}
 
 /*End of HERO__Image 
-=========================================================*/
+===========================================================================*/
 
 /* Start of Header
-==================================================== */
+==========================================================================*/
 
 .site-header{
 	position: absolute;
@@ -514,13 +515,15 @@ img{
 		margin-right: 50px;
 	}
 
+/* End of Header
+===========================================================================*/
+
 .wrapper{
 	max-width: 990px;
 	margin-right: auto;
 	margin-left: auto;
 	box-sizing: border-box;
-	padding-left: 20px;
-	padding-right: 20px;
+	background-color: rgba(0,0,0,0.3);
 }
 
 .wrapper::after{
@@ -548,14 +551,22 @@ img{
 		display: table;
 }
 
+.section__text-1{
+		font-size: 20px;
+		max-width: 270px;
+		color: lightorange;
+	}
+
 .section-1{
-	float: left;
 	max-width: 33.333%;
+	float: left;
+	background-color: rgba(0,0,0,0.3);
 }
 
 .section-2{
-	float: right;
 	max-width: 66.666%;
+	float: left;
+	background-color: rgba(0,0,0,0.3);
 }
 
 .footer{
@@ -564,11 +575,6 @@ img{
 	color: #FFF;
 	height: 475px;
 	padding-top: 45px;
-
-/*	ul li:first-child{
-		font-weight: bold;
-	}*/
-
 
 }
 
@@ -579,23 +585,42 @@ img{
 }
 
 .footer ul{
-		padding: 0 20px;
+		padding: 0;
 		margin: 0;
+		font-size: 12px;
+	}
+
+.footer__address{
+		max-width:33.33%;
+		float: left;
+		/*background-color: rgba(0,0,0,0.3);*/
+	}
+
+.footer__links{
+		max-width: 66.66%;
+		float: left;
+		/*background-color: rgba(0,0,0,0.3);*/
+	}
+
+.footer__address ul{
+		list-style-type: none;
+	}
+
+.footer__links ul{
+		list-style-type: none;
 		float: left;
 	}
 
-.footer ul li{
-		list-style-type: none;
-		font-weight: 300;
-		padding-bottom: 15px;
-		font-size: 14px;
+.footer__links ul:not(:first-child){
+		padding-left: 80px;
 	}
 
-/*	ul:not(:first-child):(first-child){
-		color: blue;
-	}*/
-
-.footer ul li:first-child{
+.footer__links ul li:first-child{
 		font-weight: bold;
+		font-size: 13px;
+	}
+
+.footer ul li{
+		padding-bottom: 16px;
 	}
 
