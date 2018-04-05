@@ -1,29 +1,94 @@
 .section{
 	font-family: 'Lato',sans-serif;
-	height: 525px;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 70px 0;
 	@mixin clearfix;
+
+	@mixin atMedium{
+		height: 525px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+
 
 
 
 	&__text-1{
+		margin: 0 auto;
 		font-size: 20px;
 		max-width: 270px;
-		color: lightorange;
+		font-style: italic;
+		position: relative;
+
+		p{
+			margin: 0;
+			padding: 0;
+		}
+
+		.span1{
+			position: absolute;
+			font-size: 50px;
+			top: -35px;
+			left: 0;
+		}
+		.span2{
+			position: absolute;
+			font-size: 50px;
+			bottom: -60px;
+
+
+		}
+	}
+
+	&__text-2{
+		@mixin atMedium{
+			padding-left: 60px;
+		}
+		h1{
+			padding: 0;
+			margin: 0;
+			color: $orange;
+			font-weight: normal;
+			font-size: 24px;
+		}
+
+		p{
+
+			color: rgba(0,0,0,0.7);
+			font-size: 14px;
+			line-height: 30px;
+			word-spacing:2px;
+		}
 	}
 
 }
 
 
 .section-1{
-	max-width: 33.333%;
-	float: left;
-	background-color: rgba(0,0,0,0.3);
+	/*background-color: rgba(0,0,0,0.3);*/
+	color: $orange;
+	border-right: .1px solid lightgrey;
+	margin-bottom: 50px;
+	text-align: center;
+
+
+	@mixin atMedium{
+		text-align:left;
+		width: 33.333%;
+		height: 330px;
+		float: left;
+
+	}
 }
 
 .section-2{
-	max-width: 66.666%;
-	float: left;
-	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+	/*background-color: rgba(0,0,0,0.3);*/
+
+	@mixin atMedium{
+		text-align: left;
+		width: 66.666%;
+		height: 330px;
+		float: left;
+	}
 }

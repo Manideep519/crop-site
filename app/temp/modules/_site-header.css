@@ -10,11 +10,14 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		transform: scale(.7);
+		transform-origin: 0 0;
 
 
 		@mixin atMedium{
 			top: 20px;
 			left: 25px;
+			transform: scale(1);
 		}
 	}
 
