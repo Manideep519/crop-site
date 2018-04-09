@@ -1,3 +1,5 @@
+/* Start Footer
+=========================================================================== */
 .footer{
 	/*background-color: rgba(0,0,0,0.3);*/
 	font-family: 'Lato',sans-serif;
@@ -19,7 +21,6 @@
 		li{
 			padding-bottom: 16px;
 		}
-
 	}
 
 
@@ -31,7 +32,6 @@
 	&__links{
 		width: 100%;
 	}
-
 
 	@media only screen and (min-width: 840px){
 		&__address{
@@ -50,16 +50,11 @@
 
 
 
-
-
-
-
 	&__address ul{
 		list-style-type: none;
 	}
 
 	&__address 	ul li:nth-child(4){
-
 		padding-bottom: 30px;
 		@media only screen and (min-width: 840px){
 			padding-top: 35px;
@@ -72,7 +67,6 @@
 
 	&__links ul{
 		list-style-type: none;
-
 		@media only screen and (min-width: 840px){
 			list-style-type: none;
 			float: left;
@@ -80,25 +74,19 @@
 	}
 
 	&__links ul:not(:first-child){
-	
 		@media only screen and (min-width: 840px){
 			padding-left: 50px;	
 		}
-
 		@media (min-width: 990px){
 		padding-left: 75px;
-
 		}
 	}
 
 	&__links ul{
-
 		padding-bottom: 30px;
-
 		@media only screen and (min-width: 840px){
 			padding-bottom: 0;
 		}
-
 	}
 
 	&__links ul li:first-child{
@@ -119,3 +107,6 @@
 		color: #FFF;
 	}
 }
+
+/*End Footer
+===========================================================================*/

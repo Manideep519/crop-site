@@ -1,3 +1,5 @@
+/*Start Section-content
+===========================================================================*/
 .section{
 	font-family: 'Lato',sans-serif;
 	padding: 70px 0;
@@ -8,10 +10,6 @@
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
-
-
-
-
 
 	&__text-1{
 		margin: 0 auto;
@@ -67,12 +65,12 @@
 .section-1{
 	/*background-color: rgba(0,0,0,0.3);*/
 	color: $orange;
-	border-right: .1px solid lightgrey;
 	margin-bottom: 50px;
 	text-align: center;
 
 
 	@mixin atMedium{
+		border-right: .1px solid lightgrey;
 		text-align:left;
 		width: 33.333%;
 		height: 330px;
@@ -92,3 +90,6 @@
 		float: left;
 	}
 }
+
+/*End Section-content
+===========================================================================*/
